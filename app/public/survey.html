@@ -1,201 +1,282 @@
 <!DOCTYPE html>
+
 <head>
   <html lang="en-us">
   <meta charset="UTF-8">
   <title>Friend Finder</title>
- <!-- materialize -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <!-- materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
 
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=Oswald|Sacramento" rel="stylesheet">
- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Sacramento" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- <link rel="stylesheet" href="style.css">     
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <br>
-    <br>
-<div class="container z-depth-5">
-        
-        <div class="row ">
-                <div class="col s12">
-                <h3 class="center-align">Survey Questions</h3>
-                <h5>About</h5>
-                <p>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">First Name</label>
-                      </div></p>
-                      <p><div class="input-field col s6">
-                            <i class="material-icons prefix">add_a_photo</i>
-                            <input id="add_a_photo" type="text" class="validate">
-                            <label for="add_a_photo">Link to photo</label>
-                          </div></p>
-                </div>
-            </div>
-            <div class="row ">
-                    <div class="input-field col s6">
-                            <select id="q1">
-                              <option value="" disabled selected>select your answer.</option>
-                              <option value="1">1 (strongly disagree)</option>
-                              <option value="2"> 2</option>
-                              <option value="3"> 3</option>
-                              <option value="3"> 4</option>
-                              <option value="3"> 5 (strongly agree)</option>
+  <br>
+  <br>
+  <div class="container z-depth-5">
 
-                            </select>
-                            <label>1. You feel the world is founded on compassion.</label>
-                        </div>
-                        <div class="input-field col s6">
-                                <select id="q2">
-                                  <option value="" disabled selected>select your answer.</option>
-                                  <option value="1">1 (strongly disagree)</option>
-                                  <option value="2"> 2</option>
-                                  <option value="3"> 3</option>
-                                  <option value="3"> 4</option>
-                                  <option value="3"> 5 (strongly agree)</option>
-    
-                                </select>
-                                <label>2. You often get so lost in thoughts that you ignore or forget your surroundings.
-                                    </label>
-                              </div>
-             </div>
-             <div class="row ">
-                    <div class="input-field col s6">
-                            <select id="q3">
-                              <option value="" disabled selected>select your answer.</option>
-                              <option value="1">1 (strongly disagree)</option>
-                              <option value="2"> 2</option>
-                              <option value="3"> 3</option>
-                              <option value="3"> 4</option>
-                              <option value="3"> 5 (strongly agree)</option>
+    <div class="row ">
+      <div class="col s12">
+        <h3 class="center-align">Survey Questions</h3>
+        <h5>About</h5>
+        <p>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">First Name</label>
+          </div>
+        </p>
+        <p>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">add_a_photo</i>
+            <input id="add_a_photo" type="text" class="validate">
+            <label for="add_a_photo">Link to photo</label>
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="input-field col s6">
+        <select id="q1">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
 
-                            </select>
-                            <label>3. You rarely do something just out of sheer curiosity.
-                                </label>
-                        </div>
-                        <div class="input-field col s6">
-                                <select id="q4">
-                                  <option value="" disabled selected>select your answer.</option>
-                                  <option value="1">1 (strongly disagree)</option>
-                                  <option value="2"> 2</option>
-                                  <option value="3"> 3</option>
-                                  <option value="3"> 4</option>
-                                  <option value="3"> 5 (strongly agree)</option>
-    
-                                </select>
-                                <label>4. You often feel as if you have to justify yourself to other people.
-                                    </label>
-                              </div>
-             </div>
-             <div class="row ">
-                    <div class="input-field col s6">
-                            <select id="q5">
-                              <option value="" disabled selected>select your answer.</option>
-                              <option value="1">1 (strongly disagree)</option>
-                              <option value="2"> 2</option>
-                              <option value="3"> 3</option>
-                              <option value="3"> 4</option>
-                              <option value="3"> 5 (strongly agree)</option>
+        </select>
+        <label>1. You feel the world is founded on compassion.</label>
+      </div>
+      <div class="input-field col s6">
+        <select id="q2">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
 
-                            </select>
-                            <label>5. Your home and work environments are quite tidy.
-                                </label>
-                        </div>
-                        <div class="input-field col s6">
-                                <select id="q6">
-                                  <option value="" disabled selected>select your answer.</option>
-                                  <option value="1">1 (strongly disagree)</option>
-                                  <option value="2"> 2</option>
-                                  <option value="3"> 3</option>
-                                  <option value="3"> 4</option>
-                                  <option value="3"> 5 (strongly agree)</option>
-    
-                                </select>
-                                <label>6. You consider yourself more practical than creative.
-                                    </label>
-                              </div>
-             </div>
-             <div class="row ">
-                    <div class="input-field col s6">
-                            <select id="q7">
-                              <option value="" disabled selected>select your answer.</option>
-                              <option value="1">1 (strongly disagree)</option>
-                              <option value="2"> 2</option>
-                              <option value="3"> 3</option>
-                              <option value="3"> 4</option>
-                              <option value="3"> 5 (strongly agree)</option>
+        </select>
+        <label>2. You often get so lost in thoughts that you ignore or forget your surroundings.
+        </label>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="input-field col s6">
+        <select id="q3">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
 
-                            </select>
-                            <label>7. It is often difficult for you to relate to other people’s feelings.
-                                </label>
-                        </div>
-                        <div class="input-field col s6">
-                                <select id="q8">
-                                  <option value="" disabled selected>select your answer.</option>
-                                  <option value="1">1 (strongly disagree)</option>
-                                  <option value="2"> 2</option>
-                                  <option value="3"> 3</option>
-                                  <option value="3"> 4</option>
-                                  <option value="3"> 5 (strongly agree)</option>
-    
-                                </select>
-                                <label>8. An interesting book or a video game is often better than a social event.
-                                    </label>
-                              </div>
-             </div>
-             <div class="row ">
-                    <div class="input-field col s6">
-                            <select id="q9">
-                              <option value="" disabled selected>select your answer.</option>
-                              <option value="1">1 (strongly disagree)</option>
-                              <option value="2"> 2</option>
-                              <option value="3"> 3</option>
-                              <option value="3"> 4</option>
-                              <option value="3"> 5 (strongly agree)</option>
+        </select>
+        <label>3. You rarely do something just out of sheer curiosity.
+        </label>
+      </div>
+      <div class="input-field col s6">
+        <select id="q4">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
 
-                            </select>
-                            <label>9. Being able to develop a plan and stick to it is the most important part of every project.</label>
-                        </div>
-                        <div class="input-field col s6">
-                                <select id="q10">
-                                  <option value="" disabled selected>select your answer.</option>
-                                  <option value="1">1 (strongly disagree)</option>
-                                  <option value="2"> 2</option>
-                                  <option value="3"> 3</option>
-                                  <option value="3"> 4</option>
-                                  <option value="3"> 5 (strongly agree)</option>
-    
-                                </select>
-                                <label>10. When you sleep, your dreams tend to focus on the real world and its events.
-                                    </label>
-                              </div>
-                              <div class="center-align">
-                              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                                    <i class="material-icons right">send</i>
-                                  </button>
-                                </div>
-                                <br>
-                                <br>
-             </div>
-        
-                
-              </div>
-                    
+        </select>
+        <label>4. You often feel as if you have to justify yourself to other people.
+        </label>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="input-field col s6">
+        <select id="q5">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
+
+        </select>
+        <label>5. Your home and work environments are quite tidy.
+        </label>
+      </div>
+      <div class="input-field col s6">
+        <select id="q6">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
+
+        </select>
+        <label>6. You consider yourself more practical than creative.
+        </label>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="input-field col s6">
+        <select id="q7">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
+
+        </select>
+        <label>7. It is often difficult for you to relate to other people’s feelings.
+        </label>
+      </div>
+      <div class="input-field col s6">
+        <select id="q8">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
+
+        </select>
+        <label>8. An interesting book or a video game is often better than a social event.
+        </label>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="input-field col s6">
+        <select id="q9">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
+
+        </select>
+        <label>9. Being able to develop a plan and stick to it is the most important part of every project.</label>
+      </div>
+      <div class="input-field col s6">
+        <select id="q10">
+          <option value="" disabled selected>select your answer.</option>
+          <option value="1">1 (strongly disagree)</option>
+          <option value="2"> 2</option>
+          <option value="3"> 3</option>
+          <option value="3"> 4</option>
+          <option value="3"> 5 (strongly agree)</option>
+
+        </select>
+        <label>10. When you sleep, your dreams tend to focus on the real world and its events.
+        </label>
+      </div>
+      <div class="center-align">
+        <button class="btn waves-effect waves-light" type="submit" name="action" id="submit">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+      <br>
+      <br>
+    </div>
 
 
-</div>
-<script type="text/javascript">
- document.addEventListener('DOMContentLoaded', function() {
-var elems = document.querySelectorAll('select');
-var options = document.querySelectorAll('option');
-var instances = M.FormSelect.init(elems, options);
-});
-</script>
+  </div>
+
+
+
+  </div>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var options = document.querySelectorAll('option');
+      var instances = M.FormSelect.init(elems, options);
+
+      $("#submit").on("click", function () {
+        function validateForm() {
+          var isValid = true;
+          $(".form-control").each(function () {
+            if ($(this).val() === "") {
+              isValid = false
+            }
+          });
+          $(".chosen-select").each(function () {
+            if ($(this).val() === "") {
+              isValid = false;
+            }
+          });
+          return isValid;
+        }
+        if (validateForm()) {
+          var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+              $("#q1").val(),
+              $("#q2").val(),
+              $("#q3").val(),
+              $("#q4").val(),
+              $("#q5").val(),
+              $("#q6").val(),
+              $("#q7").val(),
+              $("#q8").val(),
+              $("#q9").val(),
+              $("#q10").val(),
+
+            ]
+          };
+          var currentURL = window.location.origin;
+          $.post(currentURL + "/api/friends", userData, function (data) {
+            alert("working");
+          });
+        }
+      })
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, options);
+    });
+
+    $('#submitButton').on('click', function (event) {
+      event.preventDefault();
+      // Gather user inputs
+      var userInput = {
+        name: $('#userName').val().trim(),
+        photo: $('#userPhoto').val().trim(),
+        scores: [
+          $('#question1').val().trim(),
+          $('#question2').val().trim(),
+          $('#question3').val().trim(),
+          $('#question4').val().trim(),
+          $('#question5').val().trim(),
+          $('#question6').val().trim(),
+          $('#question7').val().trim(),
+          $('#question8').val().trim(),
+          $('#question9').val().trim(),
+          $('#question10').val().trim()
+        ]
+      };
+
+      // Add user inputs to friends list
+      $.post('/api/friends', userInput)
+        .done(function (data) {
+
+          // Set the name and image values of friend match
+          $('#userMatch').html(data.matchName);
+          $("#userMatchImage").attr("src", data.matchImage);
+          // Pop open the modal dialog
+          $('#modal1').modal('open');
+        });
+    });
+  </script>
 </body>
 
 
